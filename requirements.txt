@@ -1,0 +1,20 @@
+# Core Airflow
+apache-airflow==3.3.2
+
+# Common providers (for practice)
+apache-airflow-providers-sqlite
+apache-airflow-providers-http
+apache-airflow-providers-ftp
+apache-airflow-providers-imap
+
+# Optional extras (add/remove depending on your experiments)
+sqlalchemy>=1.4,<2.0
+psycopg2-binary   # Postgres support
+mysqlclient       # MySQL support
+redis             # For CeleryExecutor with Redis
+
+# Big Data / Streaming (useful for DE+AI prep)
+apache-airflow-providers-apache-spark
+apache-airflow-providers-apache-kafka
+pyspark
+findspark
